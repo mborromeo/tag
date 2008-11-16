@@ -10,7 +10,11 @@
 
 <p>
   <b>Parent:</b>
-  <%=h @project.parent_name %>
+  <% if @project.parent_id %>
+  <%= link_to @project.parent_name, :action => 'show', :id => @project.parent_id %>
+  <% else %>
+  <%= @project.parent_name %>
+  <% end %>
 </p>
 
 <p>

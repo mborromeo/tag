@@ -5,4 +5,10 @@ class Project < ActiveRecord::Base
     project = Project.find(self.parent)
     project ? project.name : "no parent"
   end
+  
+  def parent_id
+    return nil unless self.parent
+    project = Project.find(self.parent)
+    project ? project.id : nil
+  end
 end
