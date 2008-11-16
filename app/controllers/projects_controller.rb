@@ -9,6 +9,19 @@ class ProjectsController < ApplicationController
       format.xml  { render :xml => @projects }
     end
   end
+  
+  def clone
+    parent    = Project.find(params[:id])
+    @projects = Project.find(:all)
+    @project  = Project.new
+    
+    @project.name = "child of #{parent.name}" 
+    @project.description = parent.description
+    @project.links = parent.links 
+    @project.parent = parent 
+
+    render :action => 'new'
+  end
 
   # GET /projects/1
   # GET /projects/1.xml
