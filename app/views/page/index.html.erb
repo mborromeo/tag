@@ -2,7 +2,7 @@
 <div id="hp_projectlist">
   <ul>
 <% @projects.each do |project| %>
-    <li><span class="prjname"><%= project.name %></span> - <span class="prjclone">CLONE!</span></li>
+    <li><span class="prjname"><%= project.name %></span> - <span class="prjclone"><%= link_to "CLONE!", url_for(:controller => 'projects', :action => 'clone', :id => project.id) %></span></li>
 <% end %>
   </ul>
 </div>
