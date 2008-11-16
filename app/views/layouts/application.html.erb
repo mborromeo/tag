@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>TAG</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/2.5.1/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+  <style type="text/css" media="screen">
+    #hd h1 {
+      padding: 20px;
+      font-size: 189%;
+    }
+    
+    #ft {
+      margin-top: 70px;
+      text-align: center;
+    }
+    
+    .yui-g h2 {
+      font-size: 138.5%;
+    }
+    
+    #hp_projectlist {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    
+    .prjname {
+      font-size: 108%;
+      font-weight: bold;
+    }
+    
+    .prjclone {
+      font-style:italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="doc4" class="yui-t5">
+    <div id="hd"><h1>TAG</h1></div>
+    <div id="bd">
+      <div id="yui-main">
+        <div class="yui-b">
+          <div class="yui-g">
+	          <%= yield %>
+	        </div>
+        </div>
+      </div>
+      <div class="yui-b">navigation</div>
+    </div>
+  <div id="ft">TAG project @ HackUp[0]</div>
+  </div>
+</body>
+</html>
