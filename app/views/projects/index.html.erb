@@ -13,7 +13,7 @@
   <tr>
     <td><%=h project.name %></td>
     <td><%= RedCloth.new(project.description).to_html %></td>
-    <td><%=h project.parent %></td>
+    <td><%=h project.parent_name %></td>
     <td><%= RedCloth.new(project.links).to_html %></td>
     <td><%= RedCloth.new(project.members).to_html %></td>
     <td><%= link_to 'Show', project %></td>
