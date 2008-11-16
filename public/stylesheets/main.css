@@ -1,0 +1,58 @@
+body {
+	
+	font-family: "Georgia";
+	font-size: 1em;
+}
+
+#doc4 {
+	width: 600px;
+}
+
+body #ft {
+	padding: 10px;
+	border-top: 1px solid #CCC;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+.tag #hd * {
+	margin: 0;
+	padding: 0;
+}
+
+.tag #hd span.create {
+	float: right;
+	font-size: 0.6em;
+	position: relative;
+	top: 67px;
+	right: 20px;
+	display: inline;
+	padding: 5px;
+	background-color: #FFF;
+}
+
+.tag #hd span.create a:link,
+.tag #hd span.create a:visited {
+	text-decoration: none;
+	color: #3568D7;
+	font-weight: bold;
+}
+
+.tag #hd span.create a:hover {
+	color: #00D403;
+}
+.tag #hd {
+	border-bottom: 1px solid #CCC;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	font-size: 1.6em;
+	color: #3568D7;
+}
+
+.tag #hd h2 {
+	font-size: 0.8em;
+	color: #444;
+	padding: 8px 5px;
+	background-color: #CFD8F5;
+}
+

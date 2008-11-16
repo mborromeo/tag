@@ -4,6 +4,7 @@
 <head>
   <title>TAG</title>
   <link rel="stylesheet" href="http://yui.yahooapis.com/2.5.1/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+  <%= stylesheet_link_tag 'main' %>
   <style type="text/css" media="screen">
     #hd h1 {
       padding: 20px;
@@ -34,9 +35,13 @@
     }
   </style>
 </head>
-<body>
+<body class="tag">
   <div id="doc4" class="yui-t5">
-    <div id="hd"><h1>TAG</h1></div>
+    <div id="hd">
+      <span class="create"><%= link_to "Create a new project", new_project_url %></span>
+      <h1>Tag!</h1>
+      <h2>A really useful web 2.0 app.</h2>
+    </div>
     <div id="bd">
       <div id="yui-main">
         <div class="yui-b">
@@ -46,7 +51,6 @@
         </div>
       </div>
       <div class="yui-b">
-      <%= link_to "Create new project", new_project_url %>
       </div>
     </div>
   <div id="ft">TAG project @ HackUp[0]</div>
