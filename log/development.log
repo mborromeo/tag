@@ -1182,3 +1182,234 @@ Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:43:33) [GET]
 Rendering template within layouts/projects
 Rendering projects/show
 Completed in 104ms (View: 96, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 17:48:37) [GET]
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:48:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:48:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/projects/2]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:48:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 17:48:58) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:49:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Completed in 26ms (View: 13, DB: 1) | 200 OK [http://localhost/projects/2]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:52:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+  [4;35;1mProject Load (1.0ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/projects/2]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:52:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/projects/2]
+
+
+Processing ProjectsController#clone (for 127.0.0.1 at 2008-11-16 17:52:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/new
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/projects/clone/2]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 17:53:55) [GET]
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:53:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#clone (for 127.0.0.1 at 2008-11-16 17:54:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/new
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/projects/clone/1]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2008-11-16 17:55:07) [POST]
+  Parameters: {"commit"=>"Create", "project"=>{"name"=>"TAGghetto", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"* Minnie\r\n* Micky", "links"=>"* \"google\":http://google.com\r\n* \"mikamai\":http://mikamai.com\r\n* \"pippo\":http://piippo.com\r\n* \"pluto\":http://pluto.com\r\n", "parent"=>"2"}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a"}
+  [4;35;1mProject Create (0.7ms)[0m   [0mINSERT INTO "projects" ("name", "updated_at", "description", "links", "members", "parent", "created_at") VALUES('TAGghetto', '2008-11-16 16:55:07', 'Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.', '* "google":http://google.com
+* "mikamai":http://mikamai.com
+* "pippo":http://piippo.com
+* "pluto":http://pluto.com
+', '* Minnie
+* Micky', 2, '2008-11-16 16:55:07')[0m
+Redirected to #<Project:0x22f10c8>
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:55:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/projects/3]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 17:55:13) [GET]
+  [4;36;1mProject Load (1.5ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Completed in 29ms (View: 21, DB: 3) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 17:57:17) [GET]
+  [4;35;1mProject Load (1.3ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Completed in 30ms (View: 23, DB: 3) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2008-11-16 17:57:21) [GET]
+  [4;36;1mProject Load (1.2ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/new
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 17:57:40) [GET]
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:59:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#clone (for 127.0.0.1 at 2008-11-16 17:59:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/new
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/projects/clone/1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 17:59:49) [GET]
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Completed in 33ms (View: 26, DB: 2) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 17:59:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/projects/3]
+
+
+Processing ProjectsController#clone (for 127.0.0.1 at 2008-11-16 17:59:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) [0m
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/new
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/projects/clone/3]
+
+
+Processing ProjectsController#clone (for 127.0.0.1 at 2008-11-16 18:00:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) [0m
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/new
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/projects/clone/3]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 18:00:30) [GET]
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/projects]
