@@ -13,7 +13,7 @@
   </p>
   <p>
     <%= f.label :parent %><br />
-    <%= f.text_field :parent %>
+    <%= select :parent, :id, @projects.map{|u| [u.name,u.id]} %>
   </p>
   <p>
     <%= f.label :links %><br />
