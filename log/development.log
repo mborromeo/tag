@@ -64,3 +64,269 @@ Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 16:13:48) [GET]
 Rendering template within layouts/projects
 Rendering projects/index
 Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProjects (20081116151050)
+  [4;36;1mSQL (21.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("projects")[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 16:19:38) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 46ms (View: 40, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 16:21:26) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 16:24:25) [GET]
+  [4;36;1mProject Load (1.4ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2008-11-16 16:24:28) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:24:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2008-11-16 16:24:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/edit
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2008-11-16 16:24:50) [PUT]
+  Parameters: {"commit"=>"Update", "project"=>{"name"=>"TAG", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"Chiaroscuro\r\nMarco\r\nNico", "links"=>"http://1\r\nhttp://4\r\nhttp://3\r\nhttp://2\r\n", "parent"=>""}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a", "id"=>"1"}
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;35;1mProject Update (0.5ms)[0m   [0mUPDATE "projects" SET "description" = 'Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.', "updated_at" = '2008-11-16 15:24:50' WHERE "id" = 1[0m
+Redirected to #<Project:0x2323ab4>
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:24:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:25:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2008-11-16 16:25:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2008-11-16 16:25:53) [PUT]
+  Parameters: {"commit"=>"Update", "project"=>{"name"=>"TAG", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"Chiaroscuro\r\n\r\nMarco\r\n\r\nNico\r\n\r\n", "links"=>"http://1\r\n\r\nhttp://4\r\n\r\nhttp://3\r\n\r\nhttp://2\r\n", "parent"=>""}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a", "id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Update (0.4ms)[0m   [0;1mUPDATE "projects" SET "members" = 'Chiaroscuro
+
+Marco
+
+Nico
+
+', "links" = 'http://1
+
+http://4
+
+http://3
+
+http://2
+', "updated_at" = '2008-11-16 15:25:53' WHERE "id" = 1[0m
+Redirected to #<Project:0x2122a58>
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:25:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2008-11-16 16:26:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/edit
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2008-11-16 16:26:32) [PUT]
+  Parameters: {"commit"=>"Update", "project"=>{"name"=>"TAG", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"* Chiaroscuro\r\n* Marco\r\n* Nico\r\n\r\n", "links"=>"* http://1\r\n* http://4\r\n* http://3\r\n* http://2\r\n", "parent"=>""}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a", "id"=>"1"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Update (0.4ms)[0m   [0;1mUPDATE "projects" SET "members" = '* Chiaroscuro
+* Marco
+* Nico
+
+', "links" = '* http://1
+* http://4
+* http://3
+* http://2
+', "updated_at" = '2008-11-16 15:26:32' WHERE "id" = 1[0m
+Redirected to #<Project:0x200b868>
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:26:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2008-11-16 16:26:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2008-11-16 16:27:15) [PUT]
+  Parameters: {"commit"=>"Update", "project"=>{"name"=>"TAG", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"* Chiaroscuro\r\n* Marco\r\n* Nico\r\n\r\n", "links"=>"* http://google.com\r\n* http://mikamai.com\r\n* http://piippo.com\r\n* http://pluto.com\r\n", "parent"=>""}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a", "id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Update (0.5ms)[0m   [0;1mUPDATE "projects" SET "links" = '* http://google.com
+* http://mikamai.com
+* http://piippo.com
+* http://pluto.com
+', "updated_at" = '2008-11-16 15:27:15' WHERE "id" = 1[0m
+Redirected to #<Project:0x23b6a08>
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:27:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2008-11-16 16:29:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2008-11-16 16:30:01) [PUT]
+  Parameters: {"commit"=>"Update", "project"=>{"name"=>"TAG", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"* Chiaroscuro\r\n* Marco\r\n* Nico\r\n\r\n", "links"=>"* http://google.com:google\r\n* http://mikamai.com:mikamai\r\n* http://piippo.com:pippo\r\n* http://pluto.com:pluto\r\n", "parent"=>""}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a", "id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Update (0.4ms)[0m   [0;1mUPDATE "projects" SET "links" = '* http://google.com:google
+* http://mikamai.com:mikamai
+* http://piippo.com:pippo
+* http://pluto.com:pluto
+', "updated_at" = '2008-11-16 15:30:01' WHERE "id" = 1[0m
+Redirected to #<Project:0x21f9ef4>
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:30:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2008-11-16 16:30:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/edit
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2008-11-16 16:30:24) [PUT]
+  Parameters: {"commit"=>"Update", "project"=>{"name"=>"TAG", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"* Chiaroscuro\r\n* Marco\r\n* Nico\r\n\r\n", "links"=>"* \"http://google.com\":google\r\n* \"http://mikamai.com\":mikamai\r\n* \"http://piippo.com\":pippo\r\n* \"http://pluto.com\":pluto\r\n", "parent"=>""}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a", "id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Update (0.4ms)[0m   [0;1mUPDATE "projects" SET "links" = '* "http://google.com":google
+* "http://mikamai.com":mikamai
+* "http://piippo.com":pippo
+* "http://pluto.com":pluto
+', "updated_at" = '2008-11-16 15:30:24' WHERE "id" = 1[0m
+Redirected to #<Project:0x20b13e4>
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:30:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2008-11-16 16:30:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2008-11-16 16:31:41) [PUT]
+  Parameters: {"commit"=>"Update", "project"=>{"name"=>"TAG", "description"=>"Lorem ipsum *dolor* sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Maecenas aliquam maecenas ligula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet, sagittis felis sodales, dolor sociis mauris, vel eu libero cras. Interdum at. Eget habitasse elementum est, ipsum purus pede porttitor class, ut adipiscing, aliquet sed auctor, imperdiet arcu per diam dapibus libero duis. Enim eros in vel, volutpat nec pellentesque leo, scelerisque nec.", "members"=>"* Chiaroscuro\r\n* Marco\r\n* Nico\r\n\r\n", "links"=>"* \"google\":http://google.com\r\n* \"mikamai\":http://mikamai.com\r\n* \"pippo\":http://piippo.com\r\n* \"pluto\":http://pluto.com\r\n", "parent"=>""}, "authenticity_token"=>"1cebb05d670a9f28a90221d64fbbbaa3c737635a", "id"=>"1"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+  [4;36;1mProject Update (0.4ms)[0m   [0;1mUPDATE "projects" SET "links" = '* "google":http://google.com
+* "mikamai":http://mikamai.com
+* "pippo":http://piippo.com
+* "pluto":http://pluto.com
+', "updated_at" = '2008-11-16 15:31:41' WHERE "id" = 1[0m
+Redirected to #<Project:0x1fbc178>
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2008-11-16 16:31:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 106ms (View: 13, DB: 0) | 200 OK [http://localhost/projects/1]
