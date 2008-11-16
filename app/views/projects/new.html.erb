@@ -13,7 +13,7 @@
   </p>
   <p>
     <%= f.label :parent %><br />
-    <%= f.select :parent, @projects.map{|u| [u.name,u.id]} %>
+    <%= f.select :parent, @projects.map{|u| [u.name,u.id]}, :include_blank => 'no parent' %>
   </p>
   <p>
     <%= f.label :links %><br />

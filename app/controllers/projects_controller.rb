@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
     @project.name = "child of #{parent.name}" 
     @project.description = parent.description
     @project.links = parent.links 
-    @project.parent = parent 
+    @project.parent = parent.id 
 
     render :action => 'new'
   end
