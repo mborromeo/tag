@@ -1,1 +1,12 @@
 :)
+
+p. We want to create the easiest possible way to allow people to put their projects and experiences online.
+
+p. We think that this can be achieved via a very simple format that tracks project ancestry and external links to pics, code, etc.
+We are tired of endless camps and meetings where people talk tak, but never do. Our code is going to support the Hackup format of TAG - _temporary action groups_. People gather, do a project for 4 hours, publish it and then disband. Other people in future meetings can form a new TAG and expand the project.
+
+p. When you want to extend an existing project you just clone it and put your own stuff in there.
+
+p. No login needed, wikistyle.
+
+p. Descriptions, members and links are textile text.
